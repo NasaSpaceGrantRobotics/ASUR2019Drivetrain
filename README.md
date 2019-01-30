@@ -1,12 +1,11 @@
-# SimpleDrivetrain
+# ASUR2019Drivetrain
 Version: v1.0.1
 
-A Python library that facilitates the control of robot drivetrains with complex motor arrangements.
+A Python library that facilitates the control of the ASUR 2019 drivetrain.
 
 ## Table of Contents
 * [Overview](#overview)
 * [Current Features](#current-features)
-* [Roadmap](#roadmap)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [How to Use](#how-to-use)
@@ -18,27 +17,19 @@ A Python library that facilitates the control of robot drivetrains with complex 
 * [License](#license)
 
 ## Overview
-SimpleDrivetrain provides an easy way to define a drivetrain by the location and orientation of its motors, and calculate the desired velocities for each motor given the overall desired translational velocity and rotational velocities for the drivetrain.
+ASUR2019Drivetrain is a stripped-down version of SimpleDrivetrain that allows for easy control of ASUR's 2019 drivetrain.
+SimpleDrivetrain provides an easy way to define a drivetrain by the location and orientation of its motors, and calculate the desired velocities for each motor given the overall desired translational velocity and rotational velocities for the drivetrain, and ASUR2019Drivetrain restricts the robot motor arrangement to that used in the 2019 MATE and Robosub competitions.
 
 ## Current Features
-* Local-oriented and field-oriented 3-axis translation and rotation
+* Local-oriented and field-oriented, thrust-aware, translation and rotation in 3-space
 * Motor-level PWM scaling from user-defined PWM ranges or custom scaling functions
-* Support for loading drivetrains from an XML file
-
-## Roadmap
-* Motion profiles
-* Control loop
 
 ## Requirements
 * Python 2.7+/3.x
 * Numpy
-* lxml
 
 ## Installation
-Install SimpleDrivetrain from PyPI by opening a terminal and typing the following command:
-```
-$ pip install simpledrivetrain
-```
+Install SimpleDrivetrain by placing the ASUR2019Drivetrain source files in your src directory.
 
 ## How to Use
 ### Import simpledrivetrain
@@ -128,4 +119,4 @@ drivetrain.orientation = (pitch, roll, yaw)
     ```
 
 ## License
-SimpleDrivetrain is distributed under the terms of the [MIT License](https://choosealicense.com/licenses/mit/#).
+ASUR2019Drivetrain is distributed under the terms of the [MIT License](https://choosealicense.com/licenses/mit/#).
